@@ -6,72 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="revva, cv, resume">
     <meta name="description" content="Cайт - резюме Дмитрия Реввы">
+    <link rel="stylesheet" href="styles.css">
     <title>Revva Resume</title>
 </head>
 <body>
-    <img src="ava.jpg" width="300"
-    alt="Аватарка">
+
+<div class="container">
+
+    <div class="info">
+    <img src="index.jpg"
+    alt="Аватарка" class="avatar">
+
+    <div class="info-text">
     <h1>Дмитро Ревва</h1>
 
     <p>Я обучаюсь по курсу <strong>HTML&CSS</strong>, в онлайн школе по программированию <strong>Result Shool</strong></p>
     <p>Я люблю <em>заниматься спортом, играть и программировать</em></p>
 
-    <p><strong>Список социальных сетей:</strong></p>
+    <h4>Список социальных сетей:</h4>
     <a href="https://www.instagram.com/neglectsua/">Instagram</a>
     <a href="https://vk.com/neglectsua">ВКонтакте</a>
     <a href="https://t.me/be1ovv">Telegram</a>
+ </div>
+ </div>
 
-    <h1>Мои хобби</h1>
-    <ol>
+ <div class="card bg-green">
+    <h2>Мои хобби</h2>
+
+    <ol class="list">
         <li>Футбол</li>
         <li>Тяжёлая атлетика</li>
         <li>Игра на гитаре</li>
-        <li>Компьютерніе игры</li>
+        <li>Компьютерные игры</li>
     </ol>
+</div>
 
-    <h1>Опыт работы</h1>
-<table>
+ <div class="card bg-red">
+    <h2>Опыт работы</h2>
+
+<table class="table">
     <tbody>
-        <thead>
+       <!--<thead>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
-        </thead>
+        </thead> -->
             <tr>
-                <td>Freelancer</td>
-                <td>Программист</td>
-                <td>2023 - cейчас</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
             </tr>
     </tbody>
 </table>
+ </div>
 
-<h1>Связаться со мной</h1>
+ <div class="card bg-yellow">
+    <h2>Мои курсы</h2>
 
-<div>
+    <ul class="link-list">
+        <li>
+            <a href="https://lk.result.school/teach/control/stream/view/id/695281402">HTML & CSS − это первый шаг, чтобы стать IT-разработчиком</a>
+        </li>
+        <li>
+            <a href="https://lk.result.school/teach/control/stream/view/id/598508328">Тест-драйв профессии Frontend-разработчика</a>
+        </li>
+    </ul>
+</div>
+
+<form action="/" class="form">
+<h2>Связаться со мной</h2>
+
+<div class="form-row">
+<div class="form-group">
     <label for="text">Ваше имя:</label>
     <input type="text" id="text"
     placeholder="Введите имя">
 </div>
 
-<div>
+<div class="form-group">
     <label for="email">Ваш email:</label>
     <input type="email" id="email" 
     placeholder="Введите email">
 </div>
+</div>
 
-<div>
+<div class="form-group">
     <label for="message">Ваше сообщение:</label>
-    <br>
     <textarea id="message" cols="25" rows="5"
     placeholder="Введите сообщение..."></textarea>
 </div>
 
-<form>
-<!--<input type="submit" value="Отправить!">
--->
-<button type="submit"> Отправить!</button>
+<input class="btn" type="submit"
+value="Отправить!">
+</div>
 </form>
 </body>
 </html>
